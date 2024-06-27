@@ -1,0 +1,136 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.article__infos {
+    padding: 50px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.article__infos-title {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.article__infos-text {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+.article__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile__avatar-pic {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+
+.profile__avatar-infos__name {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.profile__avatar-infos__date {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+}
+
+.profile__share-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+@media screen and (min-width:375px) {
+
+    body {
+        max-width: 1440px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: row;
+
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    .article-image {
+        max-width: 100%;
+    }
+
+    .article__infos {
+        flex: 1;
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+
+
+
+
+}
