@@ -9,7 +9,9 @@
     --Light-Grayish-Blue: hsl(210, 46%, 95%);
 }
 
-
+.hidden{
+    display: none !important;
+}
 
 * {
     padding: 0;
@@ -37,15 +39,22 @@ body {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
-
+    
+    
 }
-
+.article__image-pic{
+    overflow: hidden;
+}
+.article__right-side{
+    overflow: visible;
+    
+}
 .article__infos {
     padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    
 }
 
 .article__infos-title {
@@ -75,6 +84,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    
 }
 
 .profile__avatar-pic {
@@ -92,6 +102,8 @@ body {
 .profile__avatar-infos__date {
     color: var(--Grayish-Blue);
     font-size: 14px;
+    
+    
 }
 
 .profile__share-btn {
@@ -102,11 +114,29 @@ body {
     align-items: center;
     border-radius: 50%;
     border: none;
+   
+    
+}
+.share-div{
+    position: absolute;
+    background: var(--Desaturated-Dark-Blue);
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Light-Grayish-Blue);
+    letter-spacing: 0.5rem;
+    right: 20%;
+    bottom: 42.5%;
+    z-index: 3;
+   
 }
 
 
-
-@media screen and (min-width:375px) {
+@media screen and (min-width:675px) {
 
     body {
         max-width: 1440px;
@@ -138,5 +168,5 @@ body {
         font-size: 12px;
     }
 
-
+    
 }
