@@ -131,7 +131,12 @@ body {
     }
 
 
-
+    .article__infos-title{
+        font-size:1.125rem;
+    }
+    .article__infos-text {
+        font-size: 12px;
+    }
 
 
 }
