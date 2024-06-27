@@ -30,6 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Manrope', sans-serif;
 }
 
 .article {
@@ -41,14 +42,17 @@ body {
 
 .article__infos {
     padding: 50px;
-    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
 }
 
 .article__infos-title {
     color: var(--Very-Dark-Grayish-Blue);
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 20px;
+
 }
 
 .article__infos-text {
@@ -56,7 +60,7 @@ body {
     font-size: 14px;
     line-height: 1.5rem;
     font-weight: 500;
-    margin-bottom: 40px;
+
 }
 
 
@@ -113,20 +117,17 @@ body {
     .article {
         display: flex;
         flex-direction: row;
-
-        max-width: 1000px;
         margin: 0 auto;
+         max-width: 720px;
+        padding: 0;
 
     }
-
-    .article-image {
-        max-width: 100%;
+    .article img {
+        width: 40%;
+        object-fit: cover;
     }
-
-    .article__infos {
-        flex: 1;
-        padding: 30px;
-        justify-content: space-between;
+    .article__right-side {
+        width: 60%;
     }
 
 
